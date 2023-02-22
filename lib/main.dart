@@ -286,7 +286,15 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-            )
+            ),
+            ElevatedButton(
+              style: ButtonStyle(
+                  foregroundColor:
+                      MaterialStateProperty.all(Color.fromARGB(255, 0, 0, 0)),
+                  backgroundColor: MaterialStateProperty.all(Colors.amber)),
+              onPressed: () {},
+              child: Text("Buy Package"),
+            ),
           ],
         ),
       ),
